@@ -18,25 +18,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashImage" translatesAutoresizingMaskIntoConstraints="NO" id="3Wu-Qs-y6i">
                                 <rect key="frame" x="110.66666666666669" y="388.66666666666669" width="172" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="172" id="7BL-pF-3iK"/>
-                                    <constraint firstAttribute="height" constant="100" id="rRy-QX-Ctb"/>
+                                    <constraint firstAttribute="height" constant="100" id="Thn-F8-ArC"/>
+                                    <constraint firstAttribute="width" constant="172" id="gTt-GH-7Y3"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="V1.00" translatesAutoresizingMaskIntoConstraints="NO" id="uhP-uF-T2Q">
-                                <rect key="frame" x="177" y="743" width="39" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="JsW-cb-32G"/>
-                                    <constraint firstAttribute="width" constant="39" id="vLp-Fn-Clj"/>
-                                </constraints>
+                                <rect key="frame" x="177" y="742.66666666666663" width="39" height="22"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.40784313725490196" green="0.36078431372549019" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uhP-uF-T2Q" firstAttribute="centerX" secondItem="3Wu-Qs-y6i" secondAttribute="centerX" id="WhM-OI-IbS"/>
-                            <constraint firstItem="uhP-uF-T2Q" firstAttribute="top" secondItem="3Wu-Qs-y6i" secondAttribute="bottom" constant="254.33333333333331" id="mBm-Dy-Wu8"/>
-                            <constraint firstItem="3Wu-Qs-y6i" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oFI-IV-z0G"/>
-                            <constraint firstItem="3Wu-Qs-y6i" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="uF2-ov-eXh"/>
+                            <constraint firstItem="uhP-uF-T2Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T0a-Zn-zzn"/>
+                            <constraint firstItem="uhP-uF-T2Q" firstAttribute="top" secondItem="3Wu-Qs-y6i" secondAttribute="bottom" constant="253.99999999999994" id="aSj-oO-IaS"/>
+                            <constraint firstItem="3Wu-Qs-y6i" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hdd-yi-mPl"/>
+                            <constraint firstItem="3Wu-Qs-y6i" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="rBp-RX-lGi"/>
+                            <constraint firstItem="uhP-uF-T2Q" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.0258216" id="rMx-5d-zjk"/>
+                            <constraint firstItem="uhP-uF-T2Q" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.1" id="uL8-Fa-ReD"/>
                         </constraints>
                     </view>
                 </viewController>

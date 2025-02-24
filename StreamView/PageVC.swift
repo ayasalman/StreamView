@@ -36,20 +36,26 @@ class PageVC: UIPageViewController , UIPageViewControllerDelegate,UIPageViewCont
         addPageControl()
     }
     
-  func  addPageControl()
-    {
-        pageControl = UIPageControl(frame: CGRect(x: 0, y: UIScreen.main.bounds.maxY - 75, width: UIScreen.main.bounds.width, height: 50))
-        self.pageControl.numberOfPages = pages.count
-        self.pageControl.currentPage = 0
-        self.pageControl.tintColor = UIColor.white
-        self.pageControl.pageIndicatorTintColor = UIColor.darkGray
-        self.pageControl.currentPageIndicatorTintColor = UIColor.systemPink
-       // self.pageControl.current
+    func addPageControl() {
+        pageControl = UIPageControl()
+        pageControl.numberOfPages = pages.count
+        pageControl.currentPage = 0
+        pageControl.tintColor = UIColor.white
+        pageControl.pageIndicatorTintColor = UIColor.darkGray
+        pageControl.currentPageIndicatorTintColor = UIColor.systemIndigo
+        
+        // Add the pageControl to the view
         self.view.addSubview(pageControl)
         
-       
-        
+        // Set Auto Layout constraints
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            pageControl.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            pageControl.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            pageControl.widthAnchor.constraint(equalTo: self.view.widthAnchor)
+        ])
     }
+
     
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {

@@ -22,10 +22,10 @@
                     <rect key="frame" x="24" y="75" width="345" height="426"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FX-qx-Kc5">
-                    <rect key="frame" x="0.0" y="501" width="393" height="317"/>
+                    <rect key="frame" x="0.0" y="501" width="393" height="351"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watching can be from anywhere" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m2-Hv-Tpk">
-                            <rect key="frame" x="28" y="48" width="337" height="23.333333333333329"/>
+                            <rect key="frame" x="24" y="48" width="345" height="23.333333333333329"/>
                             <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -37,9 +37,9 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMF-Jq-jlU">
-                            <rect key="frame" x="33" y="201.66666666666663" width="327" height="52"/>
+                            <rect key="frame" x="24" y="201.66666666666663" width="345" height="52"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="52" id="qgW-hO-gq2"/>
+                                <constraint firstAttribute="height" constant="52" id="naW-xP-y3H"/>
                             </constraints>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" title="Continue" cornerStyle="capsule">
@@ -50,12 +50,14 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="wMF-Jq-jlU" firstAttribute="leading" secondItem="Cud-mP-czR" secondAttribute="trailing" constant="-336" id="3Bt-2q-5qr"/>
-                        <constraint firstItem="Cud-mP-czR" firstAttribute="centerX" secondItem="6m2-Hv-Tpk" secondAttribute="centerX" id="HUp-Xs-JDt"/>
-                        <constraint firstItem="wMF-Jq-jlU" firstAttribute="width" secondItem="Cud-mP-czR" secondAttribute="width" multiplier="0.947826" id="a61-hJ-KLt"/>
-                        <constraint firstItem="Cud-mP-czR" firstAttribute="top" secondItem="6m2-Hv-Tpk" secondAttribute="bottom" constant="16.000000000000043" id="qZ0-dc-V6D"/>
-                        <constraint firstItem="Cud-mP-czR" firstAttribute="width" secondItem="6m2-Hv-Tpk" secondAttribute="width" multiplier="1.02374" id="yL3-JA-2KB"/>
-                        <constraint firstItem="wMF-Jq-jlU" firstAttribute="top" secondItem="Cud-mP-czR" secondAttribute="bottom" constant="63.999999999999943" id="ygp-J5-7zd"/>
+                        <constraint firstItem="wMF-Jq-jlU" firstAttribute="top" secondItem="Cud-mP-czR" secondAttribute="bottom" constant="64" id="28O-fh-35T"/>
+                        <constraint firstItem="Cud-mP-czR" firstAttribute="leading" secondItem="7FX-qx-Kc5" secondAttribute="leading" constant="24" id="8bD-R4-zCc"/>
+                        <constraint firstAttribute="trailing" secondItem="wMF-Jq-jlU" secondAttribute="trailing" constant="24" id="Hfw-gw-coL"/>
+                        <constraint firstAttribute="trailing" secondItem="Cud-mP-czR" secondAttribute="trailing" constant="24" id="IPg-fq-DzM"/>
+                        <constraint firstItem="6m2-Hv-Tpk" firstAttribute="leading" secondItem="7FX-qx-Kc5" secondAttribute="leading" constant="24" id="RcT-37-4ds"/>
+                        <constraint firstAttribute="trailing" secondItem="6m2-Hv-Tpk" secondAttribute="trailing" constant="24" id="U0e-zy-hXr"/>
+                        <constraint firstItem="wMF-Jq-jlU" firstAttribute="leading" secondItem="7FX-qx-Kc5" secondAttribute="leading" constant="24" id="azP-Yh-Dvb"/>
+                        <constraint firstItem="Cud-mP-czR" firstAttribute="top" secondItem="6m2-Hv-Tpk" secondAttribute="bottom" constant="16.000000000000043" id="khq-N4-hmj"/>
                     </constraints>
                 </view>
             </subviews>
@@ -63,17 +65,15 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <accessibility key="accessibilityConfiguration" identifier="page1"/>
             <constraints>
-                <constraint firstItem="F4d-wY-5R6" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.5" id="04d-U4-aJK"/>
-                <constraint firstItem="7FX-qx-Kc5" firstAttribute="top" secondItem="F4d-wY-5R6" secondAttribute="bottom" id="GSU-QZ-OlO"/>
-                <constraint firstItem="F4d-wY-5R6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="KCI-Xa-fFd"/>
-                <constraint firstItem="6m2-Hv-Tpk" firstAttribute="centerX" secondItem="F4d-wY-5R6" secondAttribute="centerX" id="Kgb-do-M86"/>
-                <constraint firstItem="F4d-wY-5R6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Led-l4-Scv"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F4d-wY-5R6" secondAttribute="trailing" constant="24" id="U6n-SF-h0q"/>
-                <constraint firstItem="7FX-qx-Kc5" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Xus-HU-m0n"/>
-                <constraint firstItem="6m2-Hv-Tpk" firstAttribute="width" secondItem="F4d-wY-5R6" secondAttribute="width" multiplier="0.976812" id="dec-gJ-N37"/>
-                <constraint firstItem="7FX-qx-Kc5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gsd-RL-2s6"/>
-                <constraint firstItem="7FX-qx-Kc5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="iq2-Xq-cO4"/>
-                <constraint firstItem="6m2-Hv-Tpk" firstAttribute="top" secondItem="F4d-wY-5R6" secondAttribute="bottom" constant="48" id="w90-JM-8JU"/>
+                <constraint firstItem="F4d-wY-5R6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="2Hd-xJ-VOk"/>
+                <constraint firstItem="7FX-qx-Kc5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8Mj-fp-VkK"/>
+                <constraint firstItem="F4d-wY-5R6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="XbN-NA-GvA"/>
+                <constraint firstItem="F4d-wY-5R6" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.5" id="XsF-Yu-M6j"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F4d-wY-5R6" secondAttribute="trailing" constant="24" id="Zz8-v7-ywe"/>
+                <constraint firstItem="7FX-qx-Kc5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ct6-m8-sWo"/>
+                <constraint firstItem="7FX-qx-Kc5" firstAttribute="top" secondItem="F4d-wY-5R6" secondAttribute="bottom" id="htb-XS-aUw"/>
+                <constraint firstItem="6m2-Hv-Tpk" firstAttribute="top" secondItem="F4d-wY-5R6" secondAttribute="bottom" constant="48" id="kYc-BM-ovs"/>
+                <constraint firstAttribute="bottom" secondItem="7FX-qx-Kc5" secondAttribute="bottom" id="t1I-Er-OzT"/>
             </constraints>
             <point key="canvasLocation" x="78.625954198473281" y="-11.267605633802818"/>
         </view>
