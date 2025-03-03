@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoarding_1VC" customModule="StreamView" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoardingStepOneViewController" customModule="StreamView" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,10 +19,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page1Image" translatesAutoresizingMaskIntoConstraints="NO" id="F4d-wY-5R6">
-                    <rect key="frame" x="24" y="75" width="345" height="426"/>
+                    <rect key="frame" x="24" y="16" width="345" height="426"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FX-qx-Kc5">
-                    <rect key="frame" x="0.0" y="501" width="393" height="351"/>
+                    <rect key="frame" x="0.0" y="442" width="393" height="410"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watching can be from anywhere" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m2-Hv-Tpk">
                             <rect key="frame" x="24" y="48" width="345" height="23.333333333333329"/>
@@ -46,6 +46,9 @@
                                 <backgroundConfiguration key="background"/>
                                 <color key="baseBackgroundColor" red="0.40784313729999999" green="0.36078431370000003" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="ContinueToPageTwo:" destination="-1" eventType="touchUpInside" id="pgC-Ow-mC3"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

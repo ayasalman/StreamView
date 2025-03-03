@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="55" y="-34"/>
         </scene>
-        <!--PageVC-->
+        <!--Pagee View Controller-->
         <scene sceneID="Hka-jq-eTq">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Bc5-Rt-6vQ" customClass="PageVC" customModule="StreamView" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Bc5-Rt-6vQ" customClass="PageeViewController" customModule="StreamView" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KDu-gA-SuU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1089" y="5"/>

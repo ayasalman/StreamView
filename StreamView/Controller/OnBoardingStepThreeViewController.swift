@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OnBoarding_3VC: UIViewController {
+class OnBoardingStepThreeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,3 +18,4 @@ class OnBoarding_3VC: UIViewController {
 
 
 }
+

@@ -1,13 +1,13 @@
 //
-//  OnBoarding_2VC.swift
+//  tstPageViewController.swift
 //  StreamView
 //
-//  Created by Aya on 23/02/2025.
+//  Created by Aya on 03/03/2025.
 //
 
 import UIKit
 
-class OnBoarding_2VC: UIViewController {
+class tstPageViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

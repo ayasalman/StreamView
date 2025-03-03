@@ -8,20 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController,UIScrollViewDelegate{
-   
-    
-    @IBOutlet weak var scrollView: UIScrollView!
-       @IBOutlet weak var pageControl: UIPageControl!
-    
-    
-  
-    
-   
-    
- /*   let myVC = ViewController(nibName: "OnBoarding_3VC", bundle: nil)
-    present(myVC, animated: true, completion: nil)
-   
-*/
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

@@ -9,11 +9,16 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+          let pageViewController = PageViewController(nibName: "PageViewController", bundle: nil) // Make sure the XIB name is correct
+          window?.rootViewController = pageViewController
+          window?.makeKeyAndVisible()
         return true
     }
 

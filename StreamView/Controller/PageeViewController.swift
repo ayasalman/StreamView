@@ -7,16 +7,16 @@
 
 import UIKit
 
-class PageVC: UIPageViewController , UIPageViewControllerDelegate,UIPageViewControllerDataSource {
+class PageeViewController: UIPageViewController , UIPageViewControllerDelegate,UIPageViewControllerDataSource {
     
     var pageControl = UIPageControl()
     
     
     lazy var pages: [UIViewController] = {
-      let firstVC = OnBoarding_1VC(nibName: "OnBoarding_1VC", bundle: nil)
-      let secondVC = OnBoarding_2VC(nibName: "OnBoarding_2VC", bundle: nil)
-       let thirdVC =  OnBoarding_3VC(nibName: "OnBoarding_3VC", bundle: nil)
-        return [firstVC, secondVC, thirdVC]
+      let firstViewController = OnBoardingStepOneViewController(nibName: "OnBoardingStepOneViewController", bundle: nil)
+      let secondViewController = OnBoardingStepTwoViewController(nibName: "OnBoardingStepTwoViewController", bundle: nil)
+       let thirdViewController =  OnBoardingStepThreeViewController(nibName: "OnBoardingStepThreeViewController", bundle: nil)
+        return [firstViewController, secondViewController, thirdViewController]
     }()
 
     override func viewDidLoad() {
@@ -28,9 +28,9 @@ class PageVC: UIPageViewController , UIPageViewControllerDelegate,UIPageViewCont
         self.dataSource = self
         self.delegate = self
         
-        if let firstVC = pages.first
+        if let firstViewController = pages.first
         {
-            setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
+            setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
         
         addPageControl()
@@ -59,8 +59,8 @@ class PageVC: UIPageViewController , UIPageViewControllerDelegate,UIPageViewCont
     
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        let pageContentVC = pageViewController.viewControllers![0]
-        self.pageControl.currentPage = pages.firstIndex(of: pageContentVC)!
+        let pageContentViewController = pageViewController.viewControllers![0]
+        self.pageControl.currentPage = pages.firstIndex(of: pageContentViewController)!
        
         
         
