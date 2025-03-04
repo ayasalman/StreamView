@@ -16,12 +16,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         let window = UIWindow(windowScene: windowScene)
-        let pageViewController = PageViewController(nibName: "PageViewController", bundle: nil) // Ensure the XIB name matches
-
-        window.rootViewController = pageViewController
-        window.makeKeyAndVisible()
+        let pageVC = PageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
-        self.window = window // ✅ Assign it to the SceneDelegate's window property
+        let navigationController = UINavigationController(rootViewController: pageVC)
+        window.rootViewController = navigationController
+        self.window = window
+        window.makeKeyAndVisible()
     }
 
 

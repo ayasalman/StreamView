@@ -18,8 +18,13 @@ class OnBoardingStepOneViewController : UIViewController {
     @IBAction func ContinueToPageTwo(_ sender: Any) {
         let OnBordingTwoNavigation = OnBoardingStepTwoViewController(nibName: "OnBoardingStepTwoViewController", bundle: nil)
        
-        OnBordingTwoNavigation.modalPresentationStyle = .fullScreen
-        self.present(OnBordingTwoNavigation, animated: true)
+       // OnBordingTwoNavigation.modalPresentationStyle = .fullScreen
+        //self.present(OnBordingTwoNavigation, animated: true)
+//        addChild(OnBordingTwoNavigation)
+//        OnBordingTwoNavigation.view.frame = view.bounds
+//            view.addSubview(OnBordingTwoNavigation.view)
+//        OnBordingTwoNavigation.didMove(toParent: self)
+        self.navigationController?.pushViewController(OnBordingTwoNavigation, animated: true)
         }
         
     }

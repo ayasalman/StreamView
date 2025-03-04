@@ -21,8 +21,14 @@ class OnBoardingStepTwoViewController: UIViewController {
         
         let OnBordingThreeNavigation = OnBoardingStepThreeViewController(nibName: "OnBoardingStepThreeViewController", bundle: nil)
        
-        OnBordingThreeNavigation.modalPresentationStyle = .fullScreen
-        self.present(OnBordingThreeNavigation, animated: true)
+       // OnBordingThreeNavigation.modalPresentationStyle = .fullScreen
+        //self.present(OnBordingThreeNavigation, animated: true)
+//        addChild(OnBordingThreeNavigation)
+//        OnBordingThreeNavigation.view.frame = view.bounds
+//            view.addSubview(OnBordingThreeNavigation.view)
+//        OnBordingThreeNavigation.didMove(toParent: self)
+        
+        self.navigationController?.pushViewController(OnBordingThreeNavigation, animated: true)
     }
     
 }

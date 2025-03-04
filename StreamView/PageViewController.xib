@@ -19,7 +19,7 @@
                 <outlet property="dataSource" destination="-1" id="PKC-Y1-ogL"/>
                 <outlet property="delegate" destination="-1" id="KaB-Ao-biO"/>
             </connections>
-            <point key="canvasLocation" x="796" y="-46"/>
+            <point key="canvasLocation" x="1244" y="-81"/>
         </pageViewController>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
