@@ -1,14 +1,14 @@
 //
-//  OnBoardingViewController.swift
+//  OnBoardingController.swift
 //  StreamView
 //
-//  Created by Aya on 08/03/2025.
+//  Created by Aya on 14/03/2025.
 //
 
 import UIKit
 
-class OnBoardingViewController: UIViewController {
-   
+class OnBoardingController: UIViewController {
+
     
     @IBOutlet weak var signInButtonOutlet: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -39,8 +39,11 @@ class OnBoardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         setupSlides()
+        print("Slides count: \(slides.count)")
+
         setupCollectionView()
         setupPageControl()
         setupLayout()
@@ -63,6 +66,8 @@ class OnBoardingViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.register(OnBoardingCollectionViewCell.self, forCellWithReuseIdentifier: "OnBoardingCollectionViewCell")
+
     }
     
     
@@ -120,17 +125,33 @@ class OnBoardingViewController: UIViewController {
     
 }
 
-extension OnBoardingViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension OnBoardingController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return slides.count
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OnBoardingCollectionViewCell.identifier, for: indexPath) as! OnBoardingCollectionViewCell
-        cell.setup(slide: slides[indexPath.row])
+        collectionView.register(OnBoardingCollectionViewCell.self, forCellWithReuseIdentifier: OnBoardingCollectionViewCell.identifier)
+
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OnBoardingCollectionViewCell.identifier, for: indexPath) as? OnBoardingCollectionViewCell else {
+            fatalError("❌ Could not dequeue OnBoardingCollectionViewCell - Check Nib registration")
+        }
+
+        let slide = slides[indexPath.row]
+        print("✅ Successfully dequeued cell with slide title: \(slide.title)")
+        
+        cell.setup(slide: slide)
+        print("📸 Image: \(cell.slideImageView?.image), 🏷 Title: \(cell.slideTitleLabel?.text), 📜 Description: \(cell.slideDescriptionLabel?.text)")
+
         return cell
     }
+
+    
+    /*func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnBoardingCollectionViewCell", for: indexPath) as! OnBoardingCollectionViewCell
+        cell.setup(slide: slides[indexPath.row])
+        return cell
+    }*/
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
@@ -203,5 +224,4 @@ extension OnBoardingViewController: UICollectionViewDataSource, UICollectionView
             self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
         })
     }
-
 }
